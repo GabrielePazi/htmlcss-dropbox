@@ -1,0 +1,10 @@
+:root {
+    --primary-btn-color: rgb(0, 97, 255);
+    --secondary-bgd-color: rgb(180, 208, 231);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
