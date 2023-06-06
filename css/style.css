@@ -10,6 +10,10 @@
     padding: 0;
 }
 
+.bottom-medium-padding {
+    padding-bottom: 25px;
+}
+
 /*  HEADER  */
 
 .container-nav {
@@ -53,6 +57,7 @@ nav a {
 .nav-right {
     justify-content: flex-end;
 }
+
 .btn {
     border: 0px;
     color: white;
@@ -61,18 +66,42 @@ nav a {
 }
 
 .container-jumbo {
-    border: 1px dashed black;
-    background-color: rgb(89, 89, 221);
+    background-color: var(--primary-bgd-color);
     padding: 50px 0px;
     display: flex;
     justify-content: center;
 }
 
 .jumbotron {
-    border: 1px dashed black;
     background-color: var(--primary-bgd-color);
     width: 1000px;
-    height: 500px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    padding: var(--primary-padding);
+}
+
+.jumbo-content-container {
+    display: flex;
+}
+
+.jumbo-text {
+    width: 33%;
+}
+
+.down-arrow {
+    font-size: 2.5rem;
+}
+
+.jumbo-img {
+    position: relative;
+    width: 67%;
+}
+
+.jumbo-img img {
+    position: absolute;
+    width: 100%;
 }
 
 /*  MAIN  */
