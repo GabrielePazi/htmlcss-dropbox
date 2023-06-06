@@ -67,10 +67,14 @@ section {
 .row {
     border: 1px dashed black;
     background-color: orange;
-    height: 600px;
-    width: 100%;
     display: flex;
     column-gap: 20px;
+    width: 100%;
+}
+
+.buisiness-row {
+    background-color: orange;
+    height: 600px;
 }
 
 .col {
@@ -100,4 +104,13 @@ section {
 .section-text {
     border: 1px dashed black;
     flex-grow: 1;
+}
+
+.cards-section {
+    height: 600px;
+}
+
+.cards-row {
+    height: 50%;
+    padding-bottom: 20px;
 }
