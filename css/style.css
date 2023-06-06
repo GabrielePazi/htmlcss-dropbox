@@ -80,7 +80,7 @@ section {
 .col {
     border: 1px dashed black;
     background-color: orangered;
-    width: 33%;
+    flex-grow: 1;
 }
 
 .enterprise-area {
@@ -178,4 +178,11 @@ footer {
     width: 1000px;
     background-color: blueviolet;
     height: 80%;
+    display: flex;
+}
+
+.col {
+    border: 1px dashed black;
+    background-color: orangered;
+    flex-grow: 1;
 }
