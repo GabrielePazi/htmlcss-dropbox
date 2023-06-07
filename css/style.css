@@ -2,6 +2,7 @@
     --primary-btn-color: rgb(0, 97, 255);
     --primary-bgd-color: rgb(180, 208, 231);
     --primary-padding: 50px 0px;
+    --secondary-text-color: rgb(191, 138, 107);
 }
 
 * {
@@ -110,41 +111,90 @@ nav a {
 
 section {
     border: 1px dashed black;
-    background-color: lightgrey;
     width: 100%;
     padding: var(--primary-padding);
 }
 
+#business {
+    margin-top: 50px;
+}
+
 .container-main {
-    background-color: yellow;
     margin: auto;
     max-width: 850px;
 }
 
-.buisiness-plan-area {
+.business-plan-title {
     border: 1px dashed black;
-    background-color: red;
-    height: 150px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
+#business h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
 .row {
     border: 1px dashed black;
-    background-color: orange;
     display: flex;
     column-gap: 20px;
+    flex-wrap: nowrap;
     width: 100%;
-}
-
-.buisiness-row {
-    background-color: orange;
-    height: 600px;
+    margin-top: 40px;
 }
 
 .col {
-    border: 1px dashed black;
-    background-color: orangered;
+    border: 1px solid rgb(224, 224, 226);
     flex-grow: 1;
+}
+
+.col-title {
+    border: 1px solid rgb(224, 224, 226);
+    text-align: center;
+    padding: 20px;
+}
+
+.col-content {
+    padding: 10px;
+}
+
+.col-content h3 {
+    padding-top: 20px;
+    padding-bottom: 1rem;
+}
+
+.price {
+    padding-bottom: 0.5rem;
+}
+
+.grey-text {
+    color: var(--secondary-text-color);
+    padding-bottom: 20px;
+}
+
+.plan-description {
+    padding-bottom: 1rem;
+}
+
+.free-trial-btn{
+    margin: 1rem 0px;
+}
+
+.col-content hr {
+    width: 50px;
+    margin: 2rem 0px;
+}
+
+.plan-highlights h4 {
+    margin-bottom: 1.5rem;
+}
+
+.plan-highlights div {
+    margin-bottom: 1rem;
+}
+
+.plan-highlights i {
+    color: var(--primary-btn-color);
 }
 
 .enterprise-area {
