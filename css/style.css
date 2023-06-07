@@ -233,17 +233,30 @@ section {
 
 .central-section {
     display: flex;
-    height: 500px;
+}
+
+.section-image img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .section-image {
-    border: 1px dashed black;
-    flex-grow: 2;
+    width: 67%;
 }
 
 .section-text {
-    border: 1px dashed black;
-    flex-grow: 1;
+    width: 33%;
+    padding: calc(20px + 1rem) 1.5rem;
+}
+
+.section-text h2, p {
+    margin-bottom: 1rem;
+}
+
+.section-text .btn {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
 }
 
 .cards-section {
