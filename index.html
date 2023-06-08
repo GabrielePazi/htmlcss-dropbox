@@ -83,7 +83,7 @@
 
     <main>
 
-        <!-- Prima sezione con 3 colonne -->
+        <!-- Sezione con 3 colonne -->
         <section id="business">
             <div class="container-main">
 
@@ -91,12 +91,13 @@
                 <div class="business-plan-area">
                     <h2>Trova il piano business che fa per te</h2>
 
-                    <input type="radio"> Fatturazione mensile
-                    <input type="radio"> Fatturazione annuale
+                    <input type="radio" name="fatturazione"> Fatturazione mensile
+                    <input type="radio" name="fatturazione"> Fatturazione annuale
                 </div>
 
-                <!-- sezione con le colonne -->
                 <div class="row">
+
+                    <!-- Prima colonna -->
                     <div class="col">
 
                         <!-- titolo -->
@@ -110,7 +111,7 @@
                             <h3>Professional</h3>
 
                             <div class="price">€ 12.00</div>
-                            <div class="grey-text">/mese</div>
+                            <div class="time-period grey-text">/mese</div>
 
                             <div class="plan-description">
                                 <i class="fa-solid fa-user"></i>
@@ -148,9 +149,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Seconda colonna -->
                     <div class="col">
                         <div class="col-title">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user-group"></i> 
                             Team
                         </div>
 
@@ -158,7 +161,7 @@
                             <h3>Advanced</h3>
 
                             <div class="price">€ 18.00</div>
-                            <div class="grey-text">/mese</div>
+                            <div class="time-period grey-text">/mese</div>
 
                             <div class="plan-description">
                                 <i class="fa-solid fa-users"></i>
@@ -211,9 +214,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Terza colonna -->
                     <div class="col">
                         <div class="col-title">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-building"></i>
                             Azienda
                         </div>
 
@@ -221,7 +226,7 @@
                             <h3>Enterprise</h3>
 
                             <div class="price">Contattaci</div>
-                            <div class="grey-text">-</div>
+                            <div class="time-period grey-text">-</div>
 
                             <div class="plan-description">
                                 <i class="fa-solid fa-user"></i>
@@ -271,7 +276,7 @@
 
                     <!-- titolo -->
                     <div class="col-title">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-building"></i>
                         Team
                     </div>
 
@@ -534,38 +539,40 @@
 
         <!-- Sesta sezione FAQ -->
         <section id="faq-section">
-            <div class="container-main">
-                <div class="faq-section-container">
-                    <div class="faq-title-container">
-                        <h2>Domande Frequenti</h2>
+            <div class="container-main faq-container">
 
-                        <hr>
-                    </div>
+                <!-- Sitolo -->
+                <div class="faq-title-container">
+                    <h2>Domande Frequenti</h2>
 
-                    <div class="faq-text-container">
-                        <div class="faq-text">
-                            <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
-                            <i class="fa-sharp fa-solid fa-caret-down"></i>
-                        </div>
-
-                        <hr>
-
-                        <div class="faq-text">
-                            <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
-                            <i class="fa-sharp fa-solid fa-caret-down"></i>
-                        </div>
-
-                        <hr>
-
-                        <div class="faq-text">
-                            <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
-                            <i class="fa-sharp fa-solid fa-caret-down"></i>
-                        </div>
-
-                        <hr>
-                        
-                    </div>
+                    <hr>
                 </div>
+
+                <!-- Sezione con domande -->
+                <div class="faq-text-container">
+                    <div class="faq-text">
+                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <hr>
+
+                    <div class="faq-text">
+                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <hr>
+
+                    <div class="faq-text">
+                        <h3>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h3>
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <hr>
+                    
+                </div>
+                
             </div>
         </section>
     </main>
@@ -573,11 +580,75 @@
     <footer>
         <!-- sezione con il footer e le colonne-->
         <div class="container-footer">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="row">
+                
+                <!-- Prima colonna -->
+                <div class="col">
+                    <ul>
+                        <li>Dropbox</li>
+                        <li>Applicazione Desktop</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+
+                <!-- Seconda colonna -->
+                <div class="col">
+                    <ul>
+                        <li>Dropbox</li>
+                        <li>Applicazione Desktop</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+
+                <!-- Terza colonna -->
+                <div class="col">
+                    <ul>
+                        <li>Dropbox</li>
+                        <li>Applicazione Desktop</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+
+                <!-- Quarta colonna -->
+                <div class="col">
+                    <ul>
+                        <li>Dropbox</li>
+                        <li>Applicazione Desktop</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+
+                <!-- Quinta colonna -->
+                <div class="col">
+                    <ul>
+                        <li>Dropbox</li>
+                        <li>Applicazione Desktop</li>
+                        <li>Piani</li>
+                        <li>Sicurezza</li>
+                        <li>Funzioni</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="language-selection-container light-grey-text">
+
+                <i class="fa-solid fa-earth-americas"></i>
+
+                <span> Italiano </span>
+
+                <i class="fa-sharp fa-solid fa-caret-up"></i>
+            </div>
         </div>
     </footer>
 </body>
