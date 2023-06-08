@@ -4,7 +4,17 @@
     --primary-padding: 50px 0px;
     --secondary-text-color: rgb(191, 138, 107);
     --primary-border-color: rgb(224, 224, 226);
+    --primary-banner-color-bgd: rgb(245, 245, 245);
+    --first-partner-bgd-color: rgb(162, 211, 155);
+    --second-partner-bgd-color: rgb(97, 8, 43);
+    --third-partner-bgd-color: rgb(0, 147, 206);
+    --fourth-partner-bgd-color:rgb(255, 28, 28);
+    --fifth-partner-bgd-color:rgb(213, 0, 31);
+    --sixth-partner-bgd-color: rgb(180, 208, 231);
+    --seventh-partner-bgd-color: rgb(13, 36, 129);
+    --eightth-partner-bgd-color: rgb(255, 216, 48);
 }
+
 
 * {
     box-sizing: border-box;
@@ -18,6 +28,15 @@
 
 h2 {
     font-size: 2.5rem;
+}
+
+hr {
+    width: 50px;
+    margin: 2rem 0px;
+}
+
+.partner-logo-first {
+
 }
 
 /*  HEADER  */
@@ -188,11 +207,6 @@ section {
     margin: 1rem 0px;
 }
 
-.col-content hr {
-    width: 50px;
-    margin: 2rem 0px;
-}
-
 #business h4 {
     margin-bottom: 1.5rem;
 }
@@ -284,45 +298,131 @@ section {
     margin-bottom: 1rem;
 }
 
-.partner-text-area {
-    height: 300px;
+#banners-section {
+    padding-bottom: 0;
+}
+
+.banner-text, .banner-text h2 {
     padding: 50px 0px;
 }
 
-.partners-container {
+.banner-container {
+    margin-top: 20px;
     width: 100%;
-    background-color: deeppink;
-    border: 1px dashed black;
     display: flex;
-
 }
 
-.partners-logo-container {
-    background-color: darkgoldenrod;
-    border: 1px dashed black;
-    flex-grow: 1;
-    height: 470px;
+.banner-logo-square, .banner-partner-square {
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
 }
 
-/* .partners-logo-container:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+.banner-partner-square {
+    background-color: var(--primary-banner-color-bgd);
 }
 
-.logos-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
-
-.free-trial-section {
+.banner-row {
     width: 100%;
-    height: 300px;
-    background-color: coral;
-    border: 1px dashed black;
+    height: 50%;
+    display: flex;
+}
+
+.banner-col {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.banner-col svg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.first-banner {
+    background-color: var(--first-partner-bgd-color);
+}
+
+.second-banner {
+    background-color: var(--second-partner-bgd-color);
+}
+
+.third-banner {
+    background-color: var(--third-partner-bgd-color);
+}
+
+.fourth-banner {
+    background-color: var(--fourth-partner-bgd-color);
+}
+
+.fifth-banner {
+    background-color: var(--fifth-partner-bgd-color);
+}
+
+.sixth-banner {
+    background-color: var(--sixth-partner-bgd-color);
+}
+
+.seventh-banner {
+    background-color: var(--seventh-partner-bgd-color);
+}
+
+.eightth-banner {
+    background-color: var(--eightth-partner-bgd-color);
+}
+
+.banner-partner-square {
+    padding: 2.5rem;
+    overflow-y: auto;
+}
+
+.partner-logo {
+    width: 50%;
+}
+
+.partner-logo img {
+    width: 100%;
+}
+
+.partner-text p {
+    padding-bottom: 1rem;
+}
+
+#free-trial-section {
+    padding: 0;
+    background-color: var(--primary-bgd-color);
+}
+
+.free-trial-container {
+    width: 100%;
+    display: flex;
+    padding: 100px 0px;
+}
+
+.free-trial-container > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.free-trial-text {
+    width: 60%;
+}
+
+.free-trial-button-container {
+    padding: 0.5rem;
+    width: 40%;
+}
+
+#free-trial-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    background-color: white;
+    border: 0px;
 }
 
 .faq-section {
