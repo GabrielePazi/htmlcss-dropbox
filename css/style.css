@@ -1,7 +1,6 @@
 :root {
     --primary-btn-color: rgb(0, 97, 255);
     --primary-bgd-color: rgb(180, 208, 231);
-    --primary-padding: 50px 0px;
     --secondary-text-color: rgb(191, 138, 107);
     --primary-border-color: rgb(224, 224, 226);
     --primary-banner-color-bgd: rgb(245, 245, 245);
@@ -26,8 +25,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bottom-medium-padding {
-    padding-bottom: 25px;
+.btn {
+    border: 0px;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--primary-btn-color);
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 h2 {
@@ -52,7 +58,6 @@ hr {
 }
 
 .intro {
-    width: 500px;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -62,14 +67,8 @@ hr {
     justify-content: flex-start;
 }
 
-.intro img {
+nav img {
     margin-right: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav li {
@@ -86,39 +85,39 @@ nav a {
     justify-content: flex-end;
 }
 
-.btn {
-    border: 0px;
-    color: white;
-    padding: 0.5rem 0.8rem;
-    background-color: var(--primary-btn-color);
+/*  MAIN  */
+
+section {
+    width: 100%;
+    padding: var(--primary-padding);
+    margin-bottom: 120px;
 }
 
-.btn:hover {
-    cursor: pointer;
-}
-
-.container-jumbo {
+#jumbo-section {
     background-color: var(--primary-bgd-color);
-    display: flex;
-    justify-content: center;
 }
 
 .jumbotron {
     background-color: var(--primary-bgd-color);
-    width: 1000px;
+    margin: auto;
+    max-width: 1000px;
 }
 
-.main-title {
+.jumbo-title {
     font-size: 2.5rem;
-    padding: var(--primary-padding);
+    padding: 50px 0px;
 }
 
 .jumbo-content-container {
     display: flex;
 }
 
-.jumbo-text {
+.jumbo-text-container {
     width: 33%;
+}
+
+.jumbo-text {
+    padding-bottom: 25px;
 }
 
 .down-arrow {
@@ -137,13 +136,6 @@ nav a {
     position: absolute;
     top: 0;
     bottom: -40px;
-}
-
-/*  MAIN  */
-
-section {
-    width: 100%;
-    padding: var(--primary-padding);
 }
 
 #business {
@@ -227,7 +219,7 @@ section {
 }
 
 .layed-row {
-    border: 1px dashed var(--primary-border-color);
+    border: 1px solid var(--primary-border-color);
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -393,7 +385,7 @@ section {
 }
 
 #free-trial-section {
-    padding: 0;
+    margin-top: -120px;
     background-color: var(--primary-bgd-color);
 }
 
